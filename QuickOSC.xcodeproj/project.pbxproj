@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2C99B2FA2B55FAC200B809D3 /* QuickOSCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99B2F92B55FAC200B809D3 /* QuickOSCApp.swift */; };
-		2C99B2FC2B55FAC200B809D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99B2FB2B55FAC200B809D3 /* ContentView.swift */; };
+		2C99B2FC2B55FAC200B809D3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99B2FB2B55FAC200B809D3 /* MainView.swift */; };
 		2C99B2FE2B55FAC400B809D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C99B2FD2B55FAC400B809D3 /* Assets.xcassets */; };
 		2C99B3012B55FAC400B809D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C99B3002B55FAC400B809D3 /* Preview Assets.xcassets */; };
+		2C99B30C2B560C9C00B809D3 /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C99B30B2B560C9C00B809D3 /* OSCKit */; };
+		2C99B30E2B560C9C00B809D3 /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2C99B30D2B560C9C00B809D3 /* OSCKitCore */; };
+		2C99B3112B5617FC00B809D3 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99B3102B5617FC00B809D3 /* ApplicationMenu.swift */; };
+		2C99B3132B561A9500B809D3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2C99B3122B561A9500B809D3 /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C99B2F62B55FAC100B809D3 /* QuickOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C99B2F92B55FAC200B809D3 /* QuickOSCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickOSCApp.swift; sourceTree = "<group>"; };
-		2C99B2FB2B55FAC200B809D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C99B2FB2B55FAC200B809D3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2C99B2FD2B55FAC400B809D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C99B3002B55FAC400B809D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C99B3022B55FAC400B809D3 /* QuickOSC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickOSC.entitlements; sourceTree = "<group>"; };
+		2C99B30F2B56153600B809D3 /* QuickOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C99B3102B5617FC00B809D3 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
+		2C99B3122B561A9500B809D3 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		2C99B3172B562C5A00B809D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2C99B3182B562CBD00B809D3 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C99B30E2B560C9C00B809D3 /* OSCKitCore in Frameworks */,
+				2C99B30C2B560C9C00B809D3 /* OSCKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,25 +46,21 @@
 		2C99B2ED2B55FAC100B809D3 = {
 			isa = PBXGroup;
 			children = (
+				2C99B3172B562C5A00B809D3 /* README.md */,
+				2C99B3182B562CBD00B809D3 /* LICENSE.md */,
 				2C99B2F82B55FAC100B809D3 /* QuickOSC */,
-				2C99B2F72B55FAC100B809D3 /* Products */,
+				2C99B30F2B56153600B809D3 /* QuickOSC.app */,
 			);
-			sourceTree = "<group>";
-		};
-		2C99B2F72B55FAC100B809D3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2C99B2F62B55FAC100B809D3 /* QuickOSC.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		2C99B2F82B55FAC100B809D3 /* QuickOSC */ = {
 			isa = PBXGroup;
 			children = (
 				2C99B2F92B55FAC200B809D3 /* QuickOSCApp.swift */,
-				2C99B2FB2B55FAC200B809D3 /* ContentView.swift */,
+				2C99B3102B5617FC00B809D3 /* ApplicationMenu.swift */,
+				2C99B2FB2B55FAC200B809D3 /* MainView.swift */,
 				2C99B2FD2B55FAC400B809D3 /* Assets.xcassets */,
+				2C99B3122B561A9500B809D3 /* Credits.rtf */,
 				2C99B3022B55FAC400B809D3 /* QuickOSC.entitlements */,
 				2C99B2FF2B55FAC400B809D3 /* Preview Content */,
 			);
@@ -85,8 +91,12 @@
 			dependencies = (
 			);
 			name = QuickOSC;
+			packageProductDependencies = (
+				2C99B30B2B560C9C00B809D3 /* OSCKit */,
+				2C99B30D2B560C9C00B809D3 /* OSCKitCore */,
+			);
 			productName = QuickOSC;
-			productReference = 2C99B2F62B55FAC100B809D3 /* QuickOSC.app */;
+			productReference = 2C99B30F2B56153600B809D3 /* QuickOSC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +123,10 @@
 				Base,
 			);
 			mainGroup = 2C99B2ED2B55FAC100B809D3;
-			productRefGroup = 2C99B2F72B55FAC100B809D3 /* Products */;
+			packageReferences = (
+				2C99B30A2B560C9C00B809D3 /* XCRemoteSwiftPackageReference "OSCKit" */,
+			);
+			productRefGroup = 2C99B2ED2B55FAC100B809D3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -128,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C99B3012B55FAC400B809D3 /* Preview Assets.xcassets in Resources */,
+				2C99B3132B561A9500B809D3 /* Credits.rtf in Resources */,
 				2C99B2FE2B55FAC400B809D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C99B2FC2B55FAC200B809D3 /* ContentView.swift in Sources */,
+				2C99B2FC2B55FAC200B809D3 /* MainView.swift in Sources */,
+				2C99B3112B5617FC00B809D3 /* ApplicationMenu.swift in Sources */,
 				2C99B2FA2B55FAC200B809D3 /* QuickOSCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,12 +286,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuickOSC/QuickOSC.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuickOSC/Preview Content\"";
+				DEVELOPMENT_TEAM = 395895S66N;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,12 +315,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = QuickOSC/QuickOSC.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuickOSC/Preview Content\"";
+				DEVELOPMENT_TEAM = 395895S66N;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,6 +360,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C99B30A2B560C9C00B809D3 /* XCRemoteSwiftPackageReference "OSCKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/OSCKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C99B30B2B560C9C00B809D3 /* OSCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C99B30A2B560C9C00B809D3 /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKit;
+		};
+		2C99B30D2B560C9C00B809D3 /* OSCKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C99B30A2B560C9C00B809D3 /* XCRemoteSwiftPackageReference "OSCKit" */;
+			productName = OSCKitCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C99B2EE2B55FAC100B809D3 /* Project object */;
 }
